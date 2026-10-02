@@ -4,10 +4,10 @@ A bilingual English/Chinese academic portfolio built as a static GitHub Pages si
 
 ## Publish
 
-1. Create a public repository named `zhangyibo1919-sys.github.io` under the `zhangyibo1919-sys` account.
+1. Create a public repository named `yibozhangdesign.github.io` under the `yibozhangdesign` account.
 2. Upload the files in this folder to the repository root (including `assets/` and `.nojekyll`).
 3. In **Settings → Pages**, select **Deploy from a branch**, `main`, `/ (root)`.
-4. Open `https://zhangyibo1919-sys.github.io/` after GitHub finishes deploying.
+4. Open `https://yibozhangdesign.github.io/` after GitHub finishes deploying.
 
 The site has no build step or package dependencies. Content and translations are in `script.js`; styling is in `styles.css`.
 
