@@ -1,14 +1,15 @@
-# Yibo Zhang — personal website
+# Yibo Zhang — academic website
 
-A bilingual English/Chinese academic portfolio built as a static GitHub Pages site.
+Live website: https://yibozhangdesign.github.io/
 
-## Publish
+A bilingual English/Chinese academic website, hosted on GitHub Pages.
 
-1. Create a public repository named `yibozhangdesign.github.io` under the `yibozhangdesign` account.
-2. Upload the files in this folder to the repository root (including `assets/` and `.nojekyll`).
-3. In **Settings → Pages**, select **Deploy from a branch**, `main`, `/ (root)`.
-4. Open `https://yibozhangdesign.github.io/` after GitHub finishes deploying.
+## Pages
 
-The site has no build step or package dependencies. Content and translations are in `script.js`; styling is in `styles.css`.
+- `index.html`: brief biography, current doctoral status, research interests, and contact links.
+- `publications.html`: 12 publications, grouped by year, with publication or clearly labelled title-search links.
+- `news.html`: recent research activities.
+- `service.html`: reviewing, teaching, research practice, honors, and patent.
 
-Professional details come from the supplied CV and recent project discussions. The contact email was independently verified on the public IDEF Lab project page. The site omits the malformed CV email and personal phone number.
+Translations and publication records are in `script.js`. Styling is in `styles.css`.
+GitHub Pages publishes the `main` branch, repository root. No build step is required.
