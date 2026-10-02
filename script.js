@@ -1,5 +1,6 @@
 const copy = {
 en: {
+viewPhoto:'View full-size photo',
 corresponding:'Corresponding author',authorLegend:'* Corresponding author',bestPaper:'Best Paper Award',readPaper:'Read paper',
 about:'About', publications:'Publications', news:'News', service:'Academic service', skip:'Skip to content', menu:'Menu',
 affiliation:'Ph.D. Candidate in Visual Design · Yonsei University',
@@ -11,6 +12,7 @@ newsIntro:'Recent research, writing, and academic activities.',serviceIntro:'Rev
 honor1:'National Bronze Award · China International College Students’ Internet+ Competition · 2023',honor2:'National Bronze Award · Challenge Cup Business Plan Competition · 2023',honor3:'National Second Prize · China College Student Computer Design Competition · 2022',patent:'Smart Blind Stick · Design patent ZL 2022 3 0203004.5',footer:'Research & design · Yonsei University',description:'Yibo Zhang is a Ph.D. candidate in Visual Design at Yonsei University, researching human–AI interaction, more-than-human design, and inclusive experiences.'
 },
 zh: {
+viewPhoto:'查看大图',
 corresponding:'通讯作者',authorLegend:'* 通讯作者',bestPaper:'最佳论文奖',readPaper:'阅读论文',
 about:'关于',publications:'论文',news:'动态',service:'学术服务',skip:'跳转到正文',menu:'菜单',affiliation:'视觉设计博士候选人 · 延世大学',
 bioLead:'我目前是延世大学视觉设计的博士候选人，生活与研究于韩国首尔。',
@@ -41,7 +43,11 @@ const updates = [
   {date:"09.2026",title:{en:"Developing Plantality Studio",zh:"推进 Plantality Studio"},body:{en:"A new interactive prototype lets visitors inspect plant evidence and make their own choices about personality language. Prototype and research are ongoing.",zh:"新的交互原型让访客检视植物证据，自主选择描述植物人格的语言。原型和研究仍在推进。"}},
   {date:"09.2026",title:{en:"Studying AI, cultural authenticity, and trust",zh:"研究 AI、文化真实性与信任"},body:{en:"Current manuscript work examines how AI-generated cultural symbols are interpreted across design and communication contexts. Manuscript in preparation.",zh:"近期手稿探讨 AI 生成的文化符号如何在设计与传播语境中被理解。手稿仍在准备中。"}},
   {date:"09.2026",title:{en:"Casting voices for plant chatbots",zh:"为植物聊天机器人寻找声音与角色"},body:{en:"An ongoing study explores how plant traits, conversational style, and audience associations can inform character design. Research in progress.",zh:"一项进行中的研究探索植物特征、对话风格与受众联想如何共同指导角色设计。"}},
-  {date:"06.2026",title:{en:"Plantality framework at KSDS",zh:"在 KSDS 展示 Plantality 框架"},body:{en:"Presented a framework for translating documented plant traits into conversational character design at the 2026 KSDS Spring International Conference.",zh:"在 2026 韩国设计学会春季国际会议展示了将植物事实转译为对话角色设计的框架。"}}
+  {date:"06.2026",title:{en:"Plantality framework at KSDS",zh:"在 KSDS 展示 Plantality 框架"},body:{en:"Presented a framework for translating documented plant traits into conversational character design at the 2026 KSDS Spring International Conference.",zh:"在 2026 韩国设计学会春季国际会议展示了将植物事实转译为对话角色设计的框架。"},photos:[
+    {src:'assets/ksds-2026-presentation.webp',width:2048,height:1536,caption:{en:'Plantality framework presentation',zh:'Plantality 框架现场报告'}},
+    {src:'assets/ksds-2026-opening.webp',width:2048,height:1536,caption:{en:'KSDS 2026 opening ceremony',zh:'KSDS 2026 开幕式'}},
+    {src:'assets/ksds-2026-program.webp',width:1536,height:2048,caption:{en:'Conference badge and program',zh:'参会证与会议手册'}}
+  ]}
 ];
 
 let savedLanguage;
@@ -66,7 +72,7 @@ function renderPublications() {
 function renderUpdates() {
  const list = document.getElementById('updates-list');
  if (!list) return;
- list.innerHTML = updates.map(update => `<article class="news-item"><time>${update.date}</time><div><h2>${escapeHtml(update.title[state.lang])}</h2><p>${escapeHtml(update.body[state.lang])}</p>${update.href ? `<a class="news-paper-link" href="${escapeHtml(update.href)}" target="_blank" rel="noopener noreferrer">${copy[state.lang].readPaper} ↗</a>` : ''}</div></article>`).join('');
+ list.innerHTML = updates.map(update => `<article class="news-item"><time>${update.date}</time><div class="news-content"><h2>${escapeHtml(update.title[state.lang])}</h2><p>${escapeHtml(update.body[state.lang])}</p>${update.href ? `<a class="news-paper-link" href="${escapeHtml(update.href)}" target="_blank" rel="noopener noreferrer">${copy[state.lang].readPaper} ↗</a>` : ''}${update.photos ? `<div class="news-gallery">${update.photos.map(photo => `<figure class="news-photo"><a href="${escapeHtml(photo.src)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(photo.caption[state.lang])} · ${copy[state.lang].viewPhoto}"><img src="${escapeHtml(photo.src)}" width="${photo.width}" height="${photo.height}" alt="${escapeHtml(photo.caption[state.lang])}" loading="lazy" decoding="async"></a><figcaption>${escapeHtml(photo.caption[state.lang])}</figcaption></figure>`).join('')}</div>` : ''}</div></article>`).join('');
 }
 function render() {
  const dictionary = copy[state.lang];
