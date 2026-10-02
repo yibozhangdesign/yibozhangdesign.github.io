@@ -1,25 +1,27 @@
 const copy = {
 en: {
+jd:'JD · Fortune Global 500',designIntern:'Design Intern',uxIntern:'UI/UX Design Intern',funding:'Funding',csc:'China Scholarship Council (CSC)',cscProgram:'CSC-funded doctoral scholarship',
 viewPhoto:'View full-size photo',
 corresponding:'Corresponding author',authorLegend:'* Corresponding author',bestPaper:'Best Paper Award',readPaper:'Read paper',
 about:'About', publications:'Publications', news:'News', service:'Academic service', skip:'Skip to content', menu:'Menu',
 affiliation:'Ph.D. Candidate in Visual Design · Yonsei University',
 bioLead:'I am a Ph.D. candidate in Visual Design at Yonsei University, based in Seoul, South Korea.',
-bioBody:'My research explores how interactive systems shape relationships between people, artificial intelligence, and the living world. I combine human-centered research, prototyping, and design to examine everyday experiences of trust, culture, and inclusion.',
+bioBody:'My research explores how interactive systems shape relationships between people, artificial intelligence, and the living world. I combine human-centered research, prototyping, and design to examine everyday experiences of trust, culture, and inclusion. My doctoral studies are funded by the China Scholarship Council (CSC).',
 interestsTitle:'Research interests',interest1:'Human–AI interaction and relationships',interest2:'More-than-human and sustainable design',interest3:'Cultural experience and inclusive design for ageing',location:'Seoul, South Korea',viewPublications:'View publications →',
 pubIntro:'Conference and journal publications in design and human–computer interaction.',all:'All',earlier:'Earlier',works:'publications',forthcoming:'Forthcoming',publisher:'Publication',search:'Title search',pendingLink:'Public publication link pending.',pubNote:'Official English titles are preserved for citation. Entries without a confirmed public publication link include a clearly labelled title search.',
-newsIntro:'Recent research, writing, and academic activities.',serviceIntro:'Reviewing, teaching, and research practice.',reviewing:'Reviewing',reviewer:'Reviewer',teaching:'Teaching',visualInteraction:'Visual Interaction Design · Yonsei University',interactionStudio:'Interaction Design Studio · Yonsei University',socialDesign:'Social Design · Yonsei University',taKim:'Teaching assistant · Prof. Kim Young-Joon',taCho:'Teaching assistant · Prof. Cho Hyung-Seuk',practice:'Research practice',pkudh:'Research Center for Digital Humanities · Peking University',ux:'UI/UX Designer',honors:'Honors & intellectual property',
+newsIntro:'Recent research, writing, and academic activities.',serviceIntro:'Reviewing, teaching, design internships, and funding.',reviewing:'Reviewing',reviewer:'Reviewer',teaching:'Teaching',visualInteraction:'Visual Interaction Design · Yonsei University',interactionStudio:'Interaction Design Studio · Yonsei University',socialDesign:'Social Design · Yonsei University',taKim:'Teaching assistant · Prof. Kim Young-Joon',taCho:'Teaching assistant · Prof. Cho Hyung-Seuk',practice:'Design internships',pkudh:'Research Center for Digital Humanities · Peking University',ux:'UI/UX Designer',honors:'Honors & intellectual property',
 honor1:'National Bronze Award · China International College Students’ Internet+ Competition · 2023',honor2:'National Bronze Award · Challenge Cup Business Plan Competition · 2023',honor3:'National Second Prize · China College Student Computer Design Competition · 2022',patent:'Smart Blind Stick · Design patent ZL 2022 3 0203004.5',footer:'Research & design · Yonsei University',description:'Yibo Zhang is a Ph.D. candidate in Visual Design at Yonsei University, researching human–AI interaction, more-than-human design, and inclusive experiences.'
 },
 zh: {
+jd:'京东 · 世界 500 强',designIntern:'设计实习生',uxIntern:'UI/UX 设计实习生',funding:'资助',csc:'国家留学基金管理委员会（CSC）',cscProgram:'国家建设高水平公派博士研究生',
 viewPhoto:'查看大图',
 corresponding:'通讯作者',authorLegend:'* 通讯作者',bestPaper:'最佳论文奖',readPaper:'阅读论文',
 about:'关于',publications:'论文',news:'动态',service:'学术服务',skip:'跳转到正文',menu:'菜单',affiliation:'视觉设计博士候选人 · 延世大学',
 bioLead:'我目前是延世大学视觉设计的博士候选人，生活与研究于韩国首尔。',
-bioBody:'我的研究关注交互系统如何塑造人与人工智能、人与生命世界之间的关系。我结合以人为本的研究、原型实践与设计，探索日常体验中的信任、文化与包容性。',
+bioBody:'我的研究关注交互系统如何塑造人与人工智能、人与生命世界之间的关系。我结合以人为本的研究、原型实践与设计，探索日常体验中的信任、文化与包容性。博士研究由 CSC 资助。',
 interestsTitle:'研究兴趣',interest1:'人智交互与人与人工智能的关系',interest2:'超越人类中心的设计与可持续设计',interest3:'文化体验与面向老龄化的包容性设计',location:'韩国首尔',viewPublications:'查看论文 →',
 pubIntro:'设计、人机交互领域的会议与期刊成果。',all:'全部',earlier:'更早',works:'项成果',forthcoming:'即将发表',publisher:'论文页面',search:'标题检索',pendingLink:'公开论文链接待补充。',pubNote:'论文保留正式英文标题，便于检索与引用。尚未确认公开链接的条目提供明确标注的标题检索入口。',
-newsIntro:'近期研究、写作与学术活动。',serviceIntro:'学术评审、教学与研究实践。',reviewing:'学术评审',reviewer:'审稿人',teaching:'教学',visualInteraction:'视觉交互设计 · 延世大学',interactionStudio:'交互设计工作室 · 延世大学',socialDesign:'社会设计 · 延世大学',taKim:'助教 · Kim Young-Joon 教授',taCho:'助教 · Cho Hyung-Seuk 教授',practice:'研究实践',pkudh:'数字人文研究中心 · 北京大学',ux:'UI/UX 设计师',honors:'荣誉与知识产权',
+newsIntro:'近期研究、写作与学术活动。',serviceIntro:'学术评审、教学、设计实习与资助。',reviewing:'学术评审',reviewer:'审稿人',teaching:'教学',visualInteraction:'视觉交互设计 · 延世大学',interactionStudio:'交互设计工作室 · 延世大学',socialDesign:'社会设计 · 延世大学',taKim:'助教 · Kim Young-Joon 教授',taCho:'助教 · Cho Hyung-Seuk 教授',practice:'设计实习',pkudh:'数字人文研究中心 · 北京大学',ux:'UI/UX 设计师',honors:'荣誉与知识产权',
 honor1:'中国国际大学生“互联网+”创新创业大赛 · 全国铜奖 · 2023',honor2:'“挑战杯”全国大学生创业计划竞赛 · 全国铜奖 · 2023',honor3:'中国大学生计算机设计大赛 · 全国二等奖 · 2022',patent:'智能导盲杖 · 外观设计专利 ZL 2022 3 0203004.5',footer:'研究与设计 · 延世大学',description:'Yibo Zhang 是延世大学视觉设计博士候选人，关注人智交互、超越人类中心的设计与包容性体验。'
 }
 };
