@@ -1,5 +1,6 @@
 const copy = {
 en: {
+corresponding:'Corresponding author',authorLegend:'* Corresponding author',bestPaper:'Best Paper Award',readPaper:'Read paper',
 about:'About', publications:'Publications', news:'News', service:'Academic service', skip:'Skip to content', menu:'Menu',
 affiliation:'Ph.D. Candidate in Visual Design · Yonsei University',
 bioLead:'I am a Ph.D. candidate in Visual Design at Yonsei University, based in Seoul, South Korea.',
@@ -10,6 +11,7 @@ newsIntro:'Recent research, writing, and academic activities.',serviceIntro:'Rev
 honor1:'National Bronze Award · China International College Students’ Internet+ Competition · 2023',honor2:'National Bronze Award · Challenge Cup Business Plan Competition · 2023',honor3:'National Second Prize · China College Student Computer Design Competition · 2022',patent:'Smart Blind Stick · Design patent ZL 2022 3 0203004.5',footer:'Research & design · Yonsei University',description:'Yibo Zhang is a Ph.D. candidate in Visual Design at Yonsei University, researching human–AI interaction, more-than-human design, and inclusive experiences.'
 },
 zh: {
+corresponding:'通讯作者',authorLegend:'* 通讯作者',bestPaper:'最佳论文奖',readPaper:'阅读论文',
 about:'关于',publications:'论文',news:'动态',service:'学术服务',skip:'跳转到正文',menu:'菜单',affiliation:'视觉设计博士候选人 · 延世大学',
 bioLead:'我目前是延世大学视觉设计的博士候选人，生活与研究于韩国首尔。',
 bioBody:'我的研究关注交互系统如何塑造人与人工智能、人与生命世界之间的关系。我结合以人为本的研究、原型实践与设计，探索日常体验中的信任、文化与包容性。',
@@ -24,9 +26,9 @@ const publications = [
   {year:2026,title:"From Daytime Diary to Nighttime Deactivation: Designing a Diary-Grounded LLM Sleep Companion for Young Adults",authors:"Yibo Zhang, Xiaoyu Ren",venue:"UbiComp / ISWC 2026",tag:"forthcoming"},
   {year:2026,title:"Developing a Framework for Mapping Plant Traits to Human Personality in Plant-Based Chatbots",authors:"Yibo Zhang, Young-ae Hahn",venue:"KSDS Spring International Conference",href:"https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12879217"},
   {year:2026,title:"Two Bots, One Couple: How Surrogate LLM Agents Shape Alliance, Fairness, and Relational Boundaries",authors:"Yibo Zhang, Zhiqiang Hou, Jianghuai Shao",venue:"CHI 2026 Extended Abstracts",href:"https://doi.org/10.1145/3772363.3798594"},
-  {year:2026,title:"Co-Designing AI-thenticity in Cross-Cultural Design: Authenticity Judgments and Trust in AI-Generated Cultural Symbols",authors:"Yibo Zhang, Yingjie Li, Xiaoyu Ren",venue:"HCI International 2026",href:"https://doi.org/10.1007/978-3-032-29900-0_11"},
-  {year:2026,title:"Reflect-AI: Using Generative AI as a Reflective Partner in Design Studio Learning",authors:"Yingjie Li, Yibo Zhang, Jinyun Li",venue:"HCI International 2026",href:"https://doi.org/10.1007/978-3-032-30542-8_9"},
-  {year:2025,title:"Tracking Cognition through Emotion: Designing a Device-Light Emotion Selection Routine for Daily Cognitive Engagement in Older Adults",authors:"Xiaoyu Ren, Yibo Zhang",venue:"UbiComp / ISWC 2025",href:"https://doi.org/10.1145/3714394.3754360"},
+  {year:2026,title:"Co-Designing AI-thenticity in Cross-Cultural Design: Authenticity Judgments and Trust in AI-Generated Cultural Symbols",authors:"Yibo Zhang, Yingjie Li, Xiaoyu Ren",venue:"HCI International 2026",href:"https://doi.org/10.1007/978-3-032-29900-0_11",bestPaper:true},
+  {year:2026,title:"Reflect-AI: Using Generative AI as a Reflective Partner in Design Studio Learning",authors:"Yingjie Li, Yibo Zhang, Jinyun Li",venue:"HCI International 2026",href:"https://doi.org/10.1007/978-3-032-30542-8_9",corresponding:true},
+  {year:2025,title:"Tracking Cognition through Emotion: Designing a Device-Light Emotion Selection Routine for Daily Cognitive Engagement in Older Adults",authors:"Xiaoyu Ren, Yibo Zhang",venue:"UbiComp / ISWC 2025",href:"https://doi.org/10.1145/3714394.3754360",corresponding:true},
   {year:2025,title:"Interactive Game Design for Elderly Hand Rehabilitation Using Real-Time Hand Gesture Recognition",authors:"Yibo Zhang, Sung-bae Jo",venue:"JIPER",href:"https://doi.org/10.12972/kosiper.2025.13.6"},
   {year:2025,title:"Social Linker: Enhancing Elderly Social Connections Through Personality-Aligned Virtual Assistants and Guided Interaction Design",authors:"Yibo Zhang, Xiaoyu Ren",venue:"HCI International 2025",href:"https://doi.org/10.1007/978-3-031-92707-2_26"},
   {year:2025,title:"Cognitive Simplification in Scenic Design: Examining Background Complexity and Perceptual Load Adjustment in Tibetan Mani Stone Landscapes",authors:"Xiaoyu Ren, Zhijun Peng, Han Sun, Yibo Zhang, Deng Pan, Hong Zhao, Yirun Wang",venue:"HCI International 2025",href:"https://doi.org/10.1007/978-3-031-94153-5_7"},
@@ -35,6 +37,7 @@ const publications = [
   {year:2022,title:"Analysis of Future Food Design Based on 3D Printing and Aesthetic Design Technology",authors:"Qinghao Yang, Yibo Zhang, Haibo Luo",venue:"Agricultural Sciences",href:"https://doi.org/10.12677/hjas.2022.129110"}
 ];
 const updates = [
+  {date:"2026",title:{en:"Best Paper Award · HCI International 2026",zh:"最佳论文奖 · HCI International 2026"},body:{en:'Our paper “Co-Designing AI-thenticity in Cross-Cultural Design: Authenticity Judgments and Trust in AI-Generated Cultural Symbols” received a Best Paper Award at HCI International 2026.',zh:'我们的论文《Co-Designing AI-thenticity in Cross-Cultural Design: Authenticity Judgments and Trust in AI-Generated Cultural Symbols》荣获 HCI International 2026 最佳论文奖。'},href:"https://doi.org/10.1007/978-3-032-29900-0_11"},
   {date:"09.2026",title:{en:"Developing Plantality Studio",zh:"推进 Plantality Studio"},body:{en:"A new interactive prototype lets visitors inspect plant evidence and make their own choices about personality language. Prototype and research are ongoing.",zh:"新的交互原型让访客检视植物证据，自主选择描述植物人格的语言。原型和研究仍在推进。"}},
   {date:"09.2026",title:{en:"Studying AI, cultural authenticity, and trust",zh:"研究 AI、文化真实性与信任"},body:{en:"Current manuscript work examines how AI-generated cultural symbols are interpreted across design and communication contexts. Manuscript in preparation.",zh:"近期手稿探讨 AI 生成的文化符号如何在设计与传播语境中被理解。手稿仍在准备中。"}},
   {date:"09.2026",title:{en:"Casting voices for plant chatbots",zh:"为植物聊天机器人寻找声音与角色"},body:{en:"An ongoing study explores how plant traits, conversational style, and audience associations can inform character design. Research in progress.",zh:"一项进行中的研究探索植物特征、对话风格与受众联想如何共同指导角色设计。"}},
@@ -45,7 +48,7 @@ let savedLanguage;
 try { savedLanguage = localStorage.getItem('yibo-lang'); } catch (_) {}
 const state = {lang: savedLanguage === 'zh' ? 'zh' : 'en', filter: 'all'};
 const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const authorLine = value => escapeHtml(value).replace(/Yibo Zhang/g, '<strong>Yibo Zhang</strong>');
+const authorLine = pub => escapeHtml(pub.authors).replace(/Yibo Zhang/g, `<strong>Yibo Zhang${pub.corresponding ? `<sup class="corresponding-mark" aria-label="${copy[state.lang].corresponding}" title="${copy[state.lang].corresponding}">*</sup>` : ''}</strong>`);
 function renderPublications() {
  const list = document.getElementById('publication-list');
  if (!list) return;
@@ -56,14 +59,14 @@ function renderPublications() {
  list.innerHTML = years.map(year => `<section class="publication-year" aria-labelledby="year-${year}"><h2 id="year-${year}">${year}</h2><div>${shown.filter(pub => pub.year === year).map(pub => {
  const href = pub.href || 'https://scholar.google.com/scholar?q=' + encodeURIComponent('"' + pub.title + '"');
  const linkLabel = pub.href ? (pub.href.includes('doi.org') ? 'DOI' : dictionary.publisher) : dictionary.search;
- return `<article class="publication"><h3><a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(pub.title)}</a></h3><p class="authors">${authorLine(pub.authors)}</p><p class="venue">${escapeHtml(pub.venue)}${pub.tag ? `<span class="status">${dictionary.forthcoming}</span>` : ''}</p><div class="paper-links"><a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${linkLabel} ↗</a>${!pub.href ? `<span class="pending-link">${dictionary.pendingLink}</span>` : ''}</div></article>`;
+ return `<article class="publication"><h3><a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(pub.title)}</a></h3><p class="authors">${authorLine(pub)}</p><p class="venue">${escapeHtml(pub.venue)}${pub.tag ? `<span class="status">${dictionary.forthcoming}</span>` : ''}${pub.bestPaper ? `<span class="award-badge">${dictionary.bestPaper}</span>` : ''}</p><div class="paper-links"><a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${linkLabel} ↗</a>${!pub.href ? `<span class="pending-link">${dictionary.pendingLink}</span>` : ''}</div></article>`;
  }).join('')}</div></section>`).join('');
  document.querySelectorAll('[data-filter]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.filter === state.filter)));
 }
 function renderUpdates() {
  const list = document.getElementById('updates-list');
  if (!list) return;
- list.innerHTML = updates.map(update => `<article class="news-item"><time>${update.date}</time><div><h2>${escapeHtml(update.title[state.lang])}</h2><p>${escapeHtml(update.body[state.lang])}</p></div></article>`).join('');
+ list.innerHTML = updates.map(update => `<article class="news-item"><time>${update.date}</time><div><h2>${escapeHtml(update.title[state.lang])}</h2><p>${escapeHtml(update.body[state.lang])}</p>${update.href ? `<a class="news-paper-link" href="${escapeHtml(update.href)}" target="_blank" rel="noopener noreferrer">${copy[state.lang].readPaper} ↗</a>` : ''}</div></article>`).join('');
 }
 function render() {
  const dictionary = copy[state.lang];
