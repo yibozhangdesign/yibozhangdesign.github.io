@@ -49,6 +49,10 @@ const updates = [
     {src:'assets/ksds-2026-opening.webp',width:2048,height:1536,caption:{en:'KSDS 2026 opening ceremony',zh:'KSDS 2026 开幕式'}},
     {src:'assets/ksds-2026-program.webp',width:1536,height:2048,caption:{en:'Conference badge and program',zh:'参会证与会议手册'}}
   ]},
+  {date:"04.2026",title:{en:"CHI 2026 · Barcelona",zh:"参加 CHI 2026 · 巴塞罗那"},body:{en:"I attended CHI 2026 in Barcelona, Spain.",zh:"参加在西班牙巴塞罗那举办的 CHI 2026。"},gallery:'pair',photos:[
+    {src:'assets/chi-2026-attendance.webp',width:1536,height:2048,caption:{en:'At the CHI 2026 conference',zh:'CHI 2026 参会现场'}},
+    {src:'assets/chi-2026-barcelona.webp',width:1536,height:2048,caption:{en:'Welcome to CHI 2026 · Barcelona',zh:'CHI 2026 欢迎标识 · 巴塞罗那'}}
+  ]},
   {date:"2025",title:{en:"UbiComp / ISWC 2025 · Aalto University, Finland",zh:"参加 UbiComp / ISWC 2025 · 芬兰阿尔托大学"},body:{en:"I attended UbiComp / ISWC 2025 at Aalto University in Finland.",zh:"参加在芬兰阿尔托大学举办的 UbiComp / ISWC 2025。"},photos:[
     {src:'assets/ubicomp-2025-reception.webp',width:2048,height:1536,caption:{en:'UbiComp / ISWC 2025 opening reception',zh:'UbiComp / ISWC 2025 开幕招待会'}},
     {src:'assets/ubicomp-2025-ccf.webp',width:2048,height:1536,caption:{en:'CCF Technical Committee on Ubiquitous Computing',zh:'CCF 普适计算专委会旗帜'}},
@@ -78,7 +82,7 @@ function renderPublications() {
 function renderUpdates() {
  const list = document.getElementById('updates-list');
  if (!list) return;
- list.innerHTML = updates.map(update => `<article class="news-item"><time>${update.date}</time><div class="news-content"><h2>${escapeHtml(update.title[state.lang])}</h2><p>${escapeHtml(update.body[state.lang])}</p>${update.href ? `<a class="news-paper-link" href="${escapeHtml(update.href)}" target="_blank" rel="noopener noreferrer">${copy[state.lang].readPaper} ↗</a>` : ''}${update.photos ? `<div class="news-gallery${update.gallery === 'featured' ? ' news-gallery-featured' : ''}">${update.photos.map(photo => `<figure class="news-photo"><a href="${escapeHtml(photo.src)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(photo.caption[state.lang])} · ${copy[state.lang].viewPhoto}"><img src="${escapeHtml(photo.src)}" width="${photo.width}" height="${photo.height}" alt="${escapeHtml(photo.caption[state.lang])}" loading="lazy" decoding="async"></a><figcaption>${escapeHtml(photo.caption[state.lang])}</figcaption></figure>`).join('')}</div>` : ''}</div></article>`).join('');
+ list.innerHTML = updates.map(update => `<article class="news-item"><time>${update.date}</time><div class="news-content"><h2>${escapeHtml(update.title[state.lang])}</h2><p>${escapeHtml(update.body[state.lang])}</p>${update.href ? `<a class="news-paper-link" href="${escapeHtml(update.href)}" target="_blank" rel="noopener noreferrer">${copy[state.lang].readPaper} ↗</a>` : ''}${update.photos ? `<div class="news-gallery${update.gallery === 'featured' ? ' news-gallery-featured' : update.gallery === 'pair' ? ' news-gallery-pair' : ''}">${update.photos.map(photo => `<figure class="news-photo"><a href="${escapeHtml(photo.src)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(photo.caption[state.lang])} · ${copy[state.lang].viewPhoto}"><img src="${escapeHtml(photo.src)}" width="${photo.width}" height="${photo.height}" alt="${escapeHtml(photo.caption[state.lang])}" loading="lazy" decoding="async"></a><figcaption>${escapeHtml(photo.caption[state.lang])}</figcaption></figure>`).join('')}</div>` : ''}</div></article>`).join('');
 }
 function render() {
  const dictionary = copy[state.lang];
