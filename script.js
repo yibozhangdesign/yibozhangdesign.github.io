@@ -48,6 +48,11 @@ const updates = [
     {src:'assets/ksds-2026-presentation.webp',width:2048,height:1536,caption:{en:'Plantality framework presentation',zh:'Plantality 框架现场报告'}},
     {src:'assets/ksds-2026-opening.webp',width:2048,height:1536,caption:{en:'KSDS 2026 opening ceremony',zh:'KSDS 2026 开幕式'}},
     {src:'assets/ksds-2026-program.webp',width:1536,height:2048,caption:{en:'Conference badge and program',zh:'参会证与会议手册'}}
+  ]},
+  {date:"2025",title:{en:"UbiComp / ISWC 2025 · Aalto University, Finland",zh:"参加 UbiComp / ISWC 2025 · 芬兰阿尔托大学"},body:{en:"I attended UbiComp / ISWC 2025 at Aalto University in Finland.",zh:"参加在芬兰阿尔托大学举办的 UbiComp / ISWC 2025。"},photos:[
+    {src:'assets/ubicomp-2025-reception.webp',width:2048,height:1536,caption:{en:'UbiComp / ISWC 2025 opening reception',zh:'UbiComp / ISWC 2025 开幕招待会'}},
+    {src:'assets/ubicomp-2025-ccf.webp',width:2048,height:1536,caption:{en:'CCF Technical Committee on Ubiquitous Computing',zh:'CCF 普适计算专委会旗帜'}},
+    {src:'assets/ubicomp-2025-poster.webp',width:1536,height:2048,caption:{en:'Poster session at Aalto University',zh:'阿尔托大学海报展示现场'}}
   ]}
 ];
 
